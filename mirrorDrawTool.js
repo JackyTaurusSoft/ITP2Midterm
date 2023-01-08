@@ -28,6 +28,8 @@ function mirrorDrawTool() {
 		if (mouseIsPressed) {
 			//if the previous values are -1 set them to the current mouse location
 			//and mirrored positions
+			lineWidth = select('#lineWidthValue').html()
+			strokeWeight(lineWidth)
 			if (previousMouseX == -1) {
 				previousMouseX = mouseX;
 				previousMouseY = mouseY;

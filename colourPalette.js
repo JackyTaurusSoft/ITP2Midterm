@@ -46,6 +46,7 @@ function ColourPalette() {
 
 			select(".colourPalette").child(colourSwatch);
 			select("#" + colourID).style("background-color", this.colours[i]);
+			select("#" + colourID).style("background-color", red);
 			colourSwatch.mouseClicked(colourClick)
 		}
 
